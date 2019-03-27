@@ -1,0 +1,125 @@
+// extend: copy selectors, mixin: copy styles
+$THEME_RED: blue;
+$BorderWidth: 1px;
+@mixin debug($border-color:red) {
+  border: $BorderWidth solid $border-color;
+  background-color: green;
+}
+
+%box {
+  border: $BorderWidth solid purple;
+  background-color: green;
+}
+
+body {
+  h1 {
+    color: $THEME_RED;
+  }
+}
+
+.nav {
+  $THEME_YELLOW: yellow;
+  @extend %box;
+  > ul {
+    background: $THEME_YELLOW;
+    >li {
+      @extend %box;
+    }
+  }
+}
+
+
+.user-card {
+  width: 100px;
+  &.active {
+    background-color: yellow;
+  }
+  &__name {
+    $THEME_YELLOW: #00ffff;
+    color: $THEME_YELLOW;
+  }
+  &:hover {
+    background-color: paleturquoise;
+  }
+  &__description {
+    $width: 50px;
+    width: $width;
+    height: $width;
+    border-radius: $width / 2;
+    border: 1px solid green;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+@mixin button--with-shadow($color) {
+  background-color: $color;
+  box-shadow: 0 5px 0 0 darken($color, 15%);
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border: 1px solid red;
+}
+
+.button-wrapper {
+  button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    margin: 0 4px;
+    &:first-child {
+      @include button--with-shadow(#55acee);
+      &:hover {
+        animation: shake-animation 0.2s linear 0s 3;
+      }
+    }
+    &:nth-child(2) {
+      @include button--with-shadow(#2ecc71);
+    }
+  }
+}
+
+@keyframes shake-animation {
+  //0% {
+  //  transform: translateX(0);
+  //}
+  //
+  //25% {
+  //  transform: translateX(-20%);
+  //}
+  //
+  //50% {
+  //  transform: translateX(0);
+  //}
+  //
+  //75% {
+  //  transform: translateX(25%);
+  //}
+  //
+  //100% {
+  //  transform: translateX(0);
+  //}
+  @for $i from 0 to 4 {
+    #{$i * 25%} {
+      @if $i % 2 == 0 {
+        transform: translateX(-20%);
+      } @else {
+        transform: translateX(20%);
+      }
+    }
+  }
+}
