@@ -7,9 +7,13 @@ var SingleObject = /** @class */ (function () {
         }
         return this.instance;
     };
+    SingleObject.prototype.login = function () {
+        console.log("login");
+    };
     SingleObject.instance = null;
     return SingleObject;
 }());
 // let a = new SingleObject(); //private constructor
 var a = SingleObject.getInstance();
+a.login();
 //# sourceMappingURL=Singleton.js.map

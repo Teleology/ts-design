@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./polymorphisim/polymorphisim");
+require("./adapt/adapt");
 //# sourceMappingURL=index.js.map

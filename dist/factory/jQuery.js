@@ -23,4 +23,4 @@ var Jquery = /** @class */ (function () {
 window.$ = function (selector) {
     return new Jquery(selector);
 };
-//# sourceMappingURL=jQuery.js.map
+//# sourceMappingURL=Jquery.js.map

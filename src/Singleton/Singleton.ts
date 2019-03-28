@@ -12,8 +12,13 @@ class SingleObject {
         }
         return this.instance;
     }
+
+    public login():void {
+        console.log("login");
+    }
 }
 
 
 // let a = new SingleObject(); //private constructor
 let a = SingleObject.getInstance();
+a.login();
