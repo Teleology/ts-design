@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./adapt/adapt");
+require("./proxy/es6-proxy");
 //# sourceMappingURL=index.js.map

@@ -1,1 +1,1 @@
-import "./adapt/adapt";
+import "./proxy/es6-proxy";
