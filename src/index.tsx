@@ -1,1 +1,1 @@
-import "./proxy/es6-proxy";
+import "./memory";

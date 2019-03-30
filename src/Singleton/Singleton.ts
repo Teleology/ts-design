@@ -22,3 +22,5 @@ class SingleObject {
 // let a = new SingleObject(); //private constructor
 let a = SingleObject.getInstance();
 a.login();
+
+export {};
