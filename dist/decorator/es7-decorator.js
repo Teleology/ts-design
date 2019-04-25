@@ -33,8 +33,19 @@ var Demo = /** @class */ (function () {
     ], Demo);
     return Demo;
 }());
+var Person = /** @class */ (function () {
+    function Person() {
+        this.name = "Js";
+    }
+    Person = __decorate([
+        addAge(30)
+    ], Person);
+    return Person;
+}());
+var temp = new Person();
+console.log(temp);
 // error when running
-new Demo().fnc = function () { return console.log(48); };
+// new Demo().fnc = () => console.log(48);
 function test2(target) {
     target.isDec = true;
 }
@@ -60,6 +71,17 @@ function log(target, propertyKey, descriptor) {
         return oldValue.apply(this, arguments);
     };
     return descriptor;
+}
+function addAge(age) {
+    return function (target) {
+        return /** @class */ (function () {
+            function class_1() {
+                this.name = new target().name;
+                this.age = age;
+            }
+            return class_1;
+        }());
+    };
 }
 // @ts-ignore
 console.log(Demo.isDec);

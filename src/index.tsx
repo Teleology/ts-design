@@ -1,1 +1,1 @@
-import "./memory";
+import "./decorator/es7-decorator";

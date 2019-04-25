@@ -1,0 +1,25 @@
+@startuml
+
+
+interface State {
+    +handlePress():void
+    +toString(): string;
+}
+
+
+class MyState {
+    -name: string
+    +handlePress():void
+    +toString(): string;
+}
+
+
+class creator {
+    +{static} StateFactory(light:string): T implements State
+}
+
+State <|-- MyState
+MyState <.. creator
+
+
+@enduml

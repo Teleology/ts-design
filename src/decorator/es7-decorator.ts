@@ -21,8 +21,18 @@ class Demo {
     }
 }
 
+@addAge(30)
+class Person {
+    name: string = "Js";
+}
+
+
+
+const temp = new Person();
+console.log(temp);
+
 // error when running
-new Demo().fnc = () => console.log(48);
+// new Demo().fnc = () => console.log(48);
 
 
 
@@ -57,6 +67,15 @@ function log(target:any, propertyKey: string, descriptor: PropertyDescriptor) {
         return oldValue.apply(this, arguments);
     };
     return descriptor;
+}
+
+function addAge(age: number) {
+    return function (target: any) {
+        return class {
+            name: string = new target().name;
+            age: number = age;
+        };
+    };
 }
 
 // @ts-ignore
