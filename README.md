@@ -1,7 +1,7 @@
-#Design Pattern
+# Design Pattern
 Typescript implementation of frequently used design Patterns
 
-#Key Concepts in Design Patterns
+# Key Concepts in Design Patterns
 **Implementation Method**
 - Encapsulation
 - Inheritance
@@ -19,12 +19,12 @@ Typescript implementation of frequently used design Patterns
     - avoid fat interface      
     - Interface-Oriented programming 
 
-#Contents
+# Contents
 - [Factory Method](https://github.com/Teleology/ts-design/tree/master/src/factory)
 
 
 
-#Contents of Each Pattern
+# Contents of Each Pattern
 - .md for explanation
 - .puml is PlantUML file
 - .ts Typescript implementations
