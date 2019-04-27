@@ -29,3 +29,11 @@ Typescript implementation of frequently used design Patterns
 - .md for explanation
 - .puml is PlantUML file
 - .ts Typescript implementations
+
+# UML
+- 依赖（Dependency): ..>
+- 泛化（Generalization): extends --|>
+- 实现（Realize): implements ..|>
+- 关联（Association）： -->
+- 聚合（Aggregation）：
+- 组合（Composition）：
