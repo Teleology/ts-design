@@ -1,0 +1,2 @@
+# industrial examples
+springboot @controller
