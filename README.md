@@ -21,6 +21,7 @@ Typescript implementation of frequently used design Patterns
 
 # Contents
 - [Factory Method](https://github.com/Teleology/ts-design/tree/master/src/factory)
+- [Singleton](https://github.com/Teleology/ts-design/tree/master/src/singleton)
 
 
 
