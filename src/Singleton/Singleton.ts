@@ -1,10 +1,12 @@
 class SingleObject {
 
+    private static instance:SingleObject  = null;
+
+    // important
     private constructor() {
 
     }
 
-    private static instance:SingleObject  = null;
 
     public static getInstance():SingleObject {
         if(this.instance == null) {

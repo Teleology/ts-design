@@ -1,2 +1,13 @@
-# industrial examples
-springboot @controller
+# Singleton
+Singleton class will only be created only once and used by others everywhere. 
+
+**Examples** 
+- [javabean, springboot @controller @service...](https://github.com/Teleology/ts-design/blob/master/src/strategy/springboot-controller.ts)
+- [util class](https://github.com/Teleology/ts-design/blob/master/src/mediator)
+
+
+ 
+
+
+
+

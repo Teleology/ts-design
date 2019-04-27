@@ -3,9 +3,9 @@ Factory Method is used to create class.
 
 When "new" is to be used, factory method should be considered.
 
-The advantage is that it makes the creation more dynamic. 
-
-[It is usually used with interface, abstract class or anonymous class](https://github.com/Teleology/ts-design/blob/master/src/strategy/strategy.ts)
+The advantage is that 
+- [bind operations when creating](https://github.com/Teleology/ts-design/blob/master/src/strategy/springboot-controller.ts)
+- [dynamic creation](https://github.com/Teleology/ts-design/blob/master/src/strategy/strategy.ts)
 
 
  

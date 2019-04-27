@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var SingleObject = /** @class */ (function () {
+    // important
     function SingleObject() {
     }
     SingleObject.getInstance = function () {
